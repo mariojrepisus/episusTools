@@ -1,0 +1,12 @@
+Package: episusTools
+Title: Ferramentas para episusianos
+Version: 0.0.0.1000
+Authors@R: 
+    person("Mário", "Lima Júnior", , "mario.junior@saude.gov.br", role = c("aut", "cre"))
+Description: Pacote com funções interessantes para uso dos treinandos do EpiSUS e outras áreas de análise de dados na SVSA.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+URL: https://github.com/mariojrepisus/episusTools
+BugReports: https://github.com/mariojrepisus/episusTools/issues
