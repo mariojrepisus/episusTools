@@ -180,3 +180,12 @@ analisando_acuracia <- function(banco,
   cat("\n\n")
   return(resultados)
 }
+
+p_valor_z = function(x, n, prop = 0.5){
+  x = x; n = n; p0 <- prop
+  p_obs <- x/n
+  Z <- (p_obs - p0) / sqrt(p0 * (1 - p0) / n)
+  p_valor <- 2 * (1 - pnorm(abs(Z)))
+  return(p_valor)
+}
+
