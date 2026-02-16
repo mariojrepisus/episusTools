@@ -1,3 +1,12 @@
+#' Realiza análise de acuracia com base em exposições e desfechos binários
+#'
+#' Com desfechos binários tipo dummy ("Sim", "Não), faz a análise de acuracia
+#' de desfechos com base em exposições. Usada primáriamente para 
+#' definições de caso
+#'
+#' @export
+
+
 analisando_acuracia <- function(banco, 
                                    exposicoes, 
                                    desfechos, 
