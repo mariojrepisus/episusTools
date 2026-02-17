@@ -1,4 +1,10 @@
-criacao_pastas = function(){
+#' Criação de uma infraestrutura de pastas mínimas, de facil referenciamento, dentro da pasta colocada como diretório de trabalho setwd()
+#'
+#' Criação de uma infraestrutura mínima de pastas, de facil referenciamento, 
+#' dentro da pasta colocada como diretório de trabalho setwd() ou da pasta básica do
+#' do projeto do R
+
+criar_pastas = function(){
   library(here)
   ## separando pastas
   pasta_geral =  paste0(here(), "/")
