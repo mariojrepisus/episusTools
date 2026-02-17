@@ -9,11 +9,11 @@ criar_pastas = function(){
   ## separando pastas
   pasta_geral =  paste0(here(), "/")
   
-  pasta_bancos = if (!dir.exists(paste0(pasta_geral, "bancos brutos/"))) {
-    dir.create(paste0(pasta_geral, "bancos brutos/"))
-    paste0(pasta_geral, "bancos brutos/")
+  pasta_bancos = if (!dir.exists(paste0(pasta_geral, "bancos_brutos/"))) {
+    dir.create(paste0(pasta_geral, "bancos_brutos/"))
+    paste0(pasta_geral, "bancos_brutos/")
   } else {
-    paste0(pasta_geral, "bancos brutos/")
+    paste0(pasta_geral, "bancos_brutos/")
   }
   
   pasta_aux = if (!dir.exists(paste0(pasta_geral, "dados auxiliares/"))) {
