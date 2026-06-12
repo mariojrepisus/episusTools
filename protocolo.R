@@ -16,8 +16,20 @@ gitcreds::gitcreds_set()
 
 usethis::use_github()
 
-usethis::use_git_remote("origin", url = NULL,
-                         overwrite = TRUE)
+
+usethis::use_git_remote(
+  name = "origin",
+  url = "https://github.com/mariojrepisus/episusTools.git"
+)
+
+
+system("git add .")
+system('git commit -m "mensagem do commit"')
+system("git push origin main")
+
+usethis::git_add()
+usethis::git_commit("mensagem do commit")
+
 
 remotes::install_github("mariojrepisus/episusTools")
 
@@ -28,3 +40,6 @@ devtools::document()
 devtools::load_all()
 
 devtools::check()
+
+
+usethis::use_version("patch")
