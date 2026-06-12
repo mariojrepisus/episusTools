@@ -16,6 +16,8 @@ gitcreds::gitcreds_set()
 
 usethis::use_github()
 
+usethis::use_git_remote("origin", url = NULL,
+                         overwrite = TRUE)
 
 remotes::install_github("mariojrepisus/episusTools")
 

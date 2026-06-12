@@ -1,6 +1,6 @@
 Package: episusTools
 Title: Ferramentas para episusianos
-Version: 0.0.0.1000
+Version: 0.0.1
 Authors@R: 
     person("Mário", "Lima Júnior", , "mario.junior@saude.gov.br", role = c("aut", "cre"))
 Description: Pacote com funções interessantes para uso dos treinandos do
