@@ -9,18 +9,21 @@ incomp_sist_multi_dt(banco, variavel, nulo = NA, nivel_validos = 90)
 \arguments{
 \item{banco}{Data frame com os dados.}
 
-\item{variavel}{Vetor de nomes das variáveis de data.}
+\item{variavel}{Vetor de nomes das variáveis de data. Apenas variáveis cujo
+nome começa com \code{"DT"} são processadas.}
 
 \item{nulo}{Valor considerado nulo (padrão: \code{NA}).}
 
-\item{nivel_validos}{Percentual mínimo de observações válidas para ser considerado adequado (padrão 90).}
+\item{nivel_validos}{Percentual mínimo de observações válidas para ser
+considerado adequado (padrão: 90).}
 }
 \value{
-Um \code{tibble} com a avaliação da completude para cada variável de data.
+Tibble com a avaliação da completude para cada variável de data.
 }
 \description{
-Esta função avalia a completude de variáveis de data (aquelas que iniciam com "DT")
-em um data frame, transformando as datas e gerando um resumo.
+Avalia a completude de variáveis de data (aquelas cujo nome começa com
+\code{"DT"}) em um data frame, convertendo as datas com \code{lubridate::dmy()} e
+gerando um resumo.
 }
 \examples{
 \dontrun{

@@ -18,3 +18,11 @@ usethis::use_github()
 
 
 remotes::install_github("mariojrepisus/episusTools")
+
+
+devtools::document()
+
+
+devtools::load_all()
+
+devtools::check()

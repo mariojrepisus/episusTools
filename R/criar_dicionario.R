@@ -19,7 +19,7 @@ criar_dicionario <- function(banco, max_valores = 50) {
   dicionario <- purrr::map_dfr(names(banco), function(var) {
     valores <- unique(banco[[var]])
     tibble::tibble(
-      Variável = var,
+      "Variavel" = var,
       Valores = paste(head(valores, max_valores), collapse = ", "),
       Total_valores = length(valores)
     )

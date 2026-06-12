@@ -2,14 +2,18 @@
 % Please edit documentation in R/pacotes_uteis.R
 \name{pacotes_uteis}
 \alias{pacotes_uteis}
-\title{Instala e Carrega Pacotes Úteis}
+\title{Instala e Carrega Pacotes Úteis para Análise de Dados}
 \usage{
 pacotes_uteis()
 }
+\value{
+Invisível. Executada pelos efeitos colaterais de instalação e
+carregamento de pacotes.
+}
 \description{
-Esta função instala o pacote \code{pacman} e, em seguida, utiliza-o para
-carregar diversos pacotes úteis para análise de dados. Também instala
-pacotes específicos do Ministério da Saúde via GitHub.
+Instala o pacote \code{pacman} e o usa para carregar uma seleção de pacotes
+úteis para análise de dados em epidemiologia. Também instala pacotes
+específicos do Ministério da Saúde via GitHub.
 }
 \examples{
 \dontrun{

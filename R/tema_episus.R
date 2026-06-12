@@ -7,7 +7,9 @@
 #' @export
 #'
 #' @examples
-#' ggplot(data) + geom_point(aes(x, y)) + tema_episus()
+#' ggplot2::ggplot(mtcars, ggplot2::aes(x = wt, y = mpg)) +
+#'   ggplot2::geom_point() +
+#'   tema_episus()
 tema_episus <- function() {
   ggplot2::theme_minimal() +
     ggplot2::theme(
