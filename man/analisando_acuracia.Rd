@@ -10,7 +10,7 @@ analisando_acuracia(
   desfechos,
   pasta_results = NULL,
   nome_analise = NULL,
-  valores = c("Sim", "Não")
+  valores = c("Sim", "Nao")
 )
 }
 \arguments{
