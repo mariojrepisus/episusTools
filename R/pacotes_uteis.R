@@ -16,6 +16,7 @@ pacotes_uteis <- function() {
   cat("Instalando pacman \n\n")
   utils::install.packages("pacman")
 
+<<<<<<< HEAD
   pkgs <- c(
     "tidyverse", "rlang", "DataExplorer", "gtsummary", "shiny", "janitor",
     "gt", "skimr", "patchwork", "RColorBrewer", "ggpmisc", "epitools",
@@ -42,4 +43,68 @@ pacotes_uteis <- function() {
   remotes::install_github("rfsaldanha/microdatasus")
 
   invisible(NULL)
+=======
+  cat("Instalando vários pacotes legais...\n\n")
+  pacman::p_load(
+    tidyverse,
+    rlang,
+    DataExplorer,
+    gtsummary,
+    shiny,
+    janitor,
+    gt,
+    skimr,
+    patchwork,
+    RColorBrewer,
+    ggpmisc,
+    epitools,
+    openxlsx,
+    hablar,
+    foreign,
+    plotly,
+    sf,
+    ggspatial,
+    geobr,
+    leaflet,
+    renv,
+    cowplot,
+    flexdashboard,
+    rio,
+    here,
+    devtools,
+    read.dbc,
+    scales,
+    classInt,
+    readxl,
+    writexl,
+    reticulate,
+    webshot,
+    arrow,
+    abjutils,
+    sysfonts,
+    showtext,
+    ggchicklet,
+    DescTools,
+    AER,
+    MuMIn,
+    broom,
+    pROC,
+    performance,
+    DHARMa,
+    treemapify,
+    tidytext,
+    conflicted
+  )
+
+  cat("Retirando alguns conflitos de funções comuns \n\n")
+  conflict_prefer("select", "dplyr")
+  conflict_prefer("filter", "dplyr")
+  conflict_prefer("recode", "dplyr")
+  conflict_prefer("rename", "dplyr")
+
+  cat("Instalando pacotes para ler bases de dados do Ministério da Saúde (precisa ter Rtools instalado) \n\n")
+  remotes::install_github("danicat/read.dbc")
+  remotes::install_github("rfsaldanha/microdatasus")
+
+>>>>>>> e01ebf36d7b5dde7c562d08f387101e897a981be
 }
