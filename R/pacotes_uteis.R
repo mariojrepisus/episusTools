@@ -62,15 +62,10 @@ pacotes_uteis = function(){
     performance,
     DHARMa,
     treemapify,
-    tidytext,
-    conflicted
+    tidytext
   )
 
-  cat("Retirando alguns conflitos de funções comuns \n\n")
-  conflict_prefer("select", "dplyr")
-  conflict_prefer("filter", "dplyr")
-  conflict_prefer("recode", "dplyr")
-  conflict_prefer("rename", "dplyr")
+
 
   cat("Instalando pacotes para ler bases de dados do Ministério da Saúde (precisa ter Rtools instalado) \n\n")
   remotes::install_github("danicat/read.dbc")
