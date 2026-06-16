@@ -32,8 +32,6 @@ criar_pastas <- function() {
   criar_se_nao_existe(paste0(pasta_resultados, "multivariada/"))
   criar_se_nao_existe(paste0(pasta_resultados, "acuracia/"))
 
-  invisible(NULL)
-=======
 #' Criação de uma infraestrutura de pastas mínimas, de facil referenciamento, dentro da pasta colocada como diretório de trabalho setwd()
 #'
 #' Criação de uma infraestrutura mínima de pastas, de facil referenciamento, 
