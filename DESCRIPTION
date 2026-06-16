@@ -10,7 +10,6 @@ LazyData: true
 RoxygenNote: 7.2.0
 Depends: R (>= 4.1.0)
 Imports:
-    conflicted,
     dplyr,
     epitools,
     ggplot2,
