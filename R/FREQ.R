@@ -7,6 +7,5 @@
 FREQ <- function(data, variable) {
   data|>
     dplyr::count(!!sym(variable))|>
-    dplyr::mutate(perc = round(n/sum(n)*100,2)
-}
+    dplyr::mutate(perc = base::round(n/sum(n)*100,2)}
 
