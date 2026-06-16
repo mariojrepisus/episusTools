@@ -5,7 +5,10 @@
 #' @return Objeto `table` com as frequências.
 #' @export
 FREQ <- function(data, variable) {
-  data|>
+  table = data|>
     dplyr::count(!!sym(variable))|>
-    dplyr::mutate(perc = base::round(n/sum(n)*100,2)}
+    dplyr::mutate(perc = base::round(n/sum(n)*100,2))
+  return(table)
+    
+}
 
