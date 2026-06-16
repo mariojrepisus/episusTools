@@ -1,7 +1,6 @@
 import(rlang)
 import(stats)
 import(utils)
-import(conflicted)
 import(dplyr)
 import(epitools)
 import(ggplot2)
