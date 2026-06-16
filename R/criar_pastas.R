@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #' Cria Infraestrutura Mínima de Pastas para um Projeto
 #'
 #' Cria uma estrutura de diretórios padronizada dentro do diretório raiz do
@@ -107,6 +107,4 @@ criar_pastas = function(){
   } else {
     paste0(pasta_resultados, "acuracia/")
   } 
-
->>>>>>> e01ebf36d7b5dde7c562d08f387101e897a981be
 }
