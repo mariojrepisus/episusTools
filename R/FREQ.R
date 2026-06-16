@@ -5,6 +5,7 @@
 #' @return Objeto `table` com as frequências.
 #' @export
 FREQ <- function(data, variable) {
-  table(data[[variable]])
+  data|>
+    count(!!sym(variable))
 }
 
