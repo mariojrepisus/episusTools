@@ -13,7 +13,7 @@
 #'   pacotes_uteis()
 #' }
 
-
+pacotes_uteis(){
   cat("Instalando vários pacotes legais...\n\n")
   pacman::p_load(
     tidyverse,
