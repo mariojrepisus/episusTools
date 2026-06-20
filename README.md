@@ -1,27 +1,39 @@
 # episusTools
 
-`episusTools` é um pacote de utilitários para análise epidemiológica, com funções desenvolvidas para treinandos do EpiSUS e analistas de dados na SVSA.
+`episusTools` é um pacote de utilitários para análise epidemiológica, com funções desenvolvidas para treinandos do EpiSUS e analistas de dados em saúde.
 
 ## Instalação
 
-Para instalar localmente, abra um terminal no diretório do pacote e use:
+Para instalar 
 
 ```r
 # se usar devtools
-# devtools::install()
+remotes::install_github("mariojrepisus/episusTools")
 
-# para construir o pacote localmente
-# R CMD build .
-# R CMD INSTALL episusTools_0.1.0.tar.gz
+# É interessante também instalar pacotes usualmente utilizados, inclusive o microdatasus e read.dbc
+# Para isso, não esqueça de instalar o rtools correspondente a sua versão do R
+
+library(episusTools)
+pacotes_uteis()
+
 ```
 
 ## Uso básico
 
 ```r
-library(episusTools)
-
 # Exemplo de função do pacote
-# dic <- criar_dicionario(banco)
+
+## Criando dicionário de dados
+dic <- criar_dicionario(banco)
+
+## Funções similares ao EpiInfo (pgm)
+FREQ(iris, "Species")
+MEANS(iris, "Petal.Length")
+
+## Formato de numero em texto para tabelas
+iris = iris|>
+  mutate(Petal.Width_string = format_n_int(Petal.Width))
+
 ```
 
 ## Estrutura do pacote
